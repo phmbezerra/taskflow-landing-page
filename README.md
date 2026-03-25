@@ -1,1 +1,10 @@
-# taskflow-landing-page
+# Projeto 1 — Desenvolvimento Web
+
+Landing page responsiva criada com HTML, CSS e JavaScript.
+
+## Recursos
+- Layout moderno
+- Estrutura semântica
+- Responsividade
+- Contador animado
+- Formulário com validação básica
