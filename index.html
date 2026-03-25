@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow | Organização para seu dia</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="hero">
+    <nav class="navbar container">
+      <h1 class="logo">TaskFlow</h1>
+      <ul class="nav-links">
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content container">
+      <div>
+        <p class="tag">Projeto de Desenvolvimento Web</p>
+        <h2>Organize suas tarefas de forma simples e eficiente</h2>
+        <p class="subtitle">
+          Landing page moderna e responsiva feita com HTML, CSS e JavaScript,
+          com foco em organização visual, usabilidade e interatividade.
+        </p>
+        <a href="#recursos" class="btn">Ver recursos</a>
+      </div>
+      <div class="card-preview">
+        <div class="mini-card">
+          <h3>Painel</h3>
+          <p>Tarefas concluídas</p>
+          <strong id="completed-count">12</strong>
+        </div>
+        <div class="mini-card">
+          <h3>Produtividade</h3>
+          <p>Nível da semana</p>
+          <strong id="productivity">86%</strong>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="recursos" class="features container">
+      <h2>Recursos do projeto</h2>
+      <div class="grid">
+        <article class="feature-card">
+          <h3>Responsividade</h3>
+          <p>Layout adaptado para celular, tablet e desktop.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Design moderno</h3>
+          <p>Interface limpa, organizada e agradável visualmente.</p>
+        </article>
+        <article class="feature-card">
+          <h3>Interatividade</h3>
+          <p>Elementos dinâmicos em JavaScript para melhorar a experiência.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="container about-box">
+        <div>
+          <h2>Sobre o projeto</h2>
+          <p>
+            Este projeto foi desenvolvido como exemplo de aplicação front-end para
+            portfólio, demonstrando estrutura semântica, estilização com CSS e
+            manipulação básica com JavaScript.
+          </p>
+        </div>
+
+        <div class="counter-box">
+          <p>Usuários ativos</p>
+          <h3 id="counter">0</h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="contact container">
+      <h2>Entre em contato</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Seu nome" required />
+        <input type="email" id="email" placeholder="Seu e-mail" required />
+        <textarea id="message" placeholder="Digite sua mensagem" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+      <p id="form-status"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
