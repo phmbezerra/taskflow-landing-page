@@ -8,3 +8,6 @@ Landing page responsiva criada com HTML, CSS e JavaScript.
 - Responsividade
 - Contador animado
 - Formulário com validação básica
+
+## Acesso ao projeto
+- Projeto online: 
