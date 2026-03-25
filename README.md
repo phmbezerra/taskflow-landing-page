@@ -33,8 +33,11 @@ Este projeto foi desenvolvido com o objetivo de praticar conceitos fundamentais 
 
 ## Estrutura do projeto
 index.html
+
 style.css
+
 script.js
+
 README.md
 
 ## Aprendizados
@@ -53,7 +56,9 @@ Durante o desenvolvimento deste projeto, foram praticados conceitos como:
 
 ## Autor
 **Paulo Henrique de Melo Bezerra**  
+
 Estudante de Ciência da Computação - CEUB  
+
 Brasília - DF
 
 ## Contato
