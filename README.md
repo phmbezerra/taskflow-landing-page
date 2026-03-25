@@ -10,4 +10,4 @@ Landing page responsiva criada com HTML, CSS e JavaScript.
 - Formulário com validação básica
 
 ## Acesso ao projeto
-- Projeto online: 
+- Projeto online: https://phmbezerra.github.io/taskflow-landing-page/
