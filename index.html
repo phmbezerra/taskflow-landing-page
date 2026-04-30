@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow | Organização para seu dia</title>
+  <meta
+    name="description"
+    content="Landing page moderna e responsiva da TaskFlow, desenvolvida com HTML, CSS e JavaScript, com foco em organização visual, usabilidade e interatividade."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <header class="hero" id="inicio">
+    <nav class="navbar container">
+      <a href="#inicio" class="logo">TaskFlow</a>
+
+      <div class="nav-actions">
+        <button
+          class="theme-toggle"
+          type="button"
+          id="theme-toggle"
+          aria-label="Alternar tema"
+          title="Alternar tema"
+        >
+          <span class="theme-icon">🌙</span>
+        </button>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Abrir menu de navegação"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#destaques">Destaques</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero-content container">
+      <div class="hero-copy reveal">
+        <p class="tag">Projeto de Desenvolvimento Web</p>
+        <h1>Organize suas tarefas de forma simples, visual e eficiente</h1>
+        <p class="subtitle">
+          Uma landing page moderna e responsiva, criada com HTML, CSS e JavaScript,
+          pensada para demonstrar organização visual, usabilidade, interatividade e
+          uma apresentação profissional de produto digital.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#recursos" class="btn btn-primary">Ver recursos</a>
+          <a href="#contato" class="btn btn-secondary">Entrar em contato</a>
+        </div>
+
+        <div class="hero-metrics">
+          <div class="metric-card">
+            <span class="metric-label">Tarefas concluídas</span>
+            <strong id="completed-count">12</strong>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Produtividade</span>
+            <strong id="productivity">86%</strong>
+          </div>
+          <div class="metric-card">
+            <span class="metric-label">Usuários ativos</span>
+            <strong id="counter">0</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="dashboard-card">
+          <div class="dashboard-top">
+            <span class="pill">Fluxo semanal</span>
+            <span class="status-dot"></span>
+          </div>
+
+          <div class="dashboard-panel">
+            <div class="panel-head">
+              <h2>Painel inteligente</h2>
+              <p>Resumo rápido de desempenho, prioridades e foco do dia.</p>
+            </div>
+
+            <div class="task-list">
+              <div class="task-item">
+                <div>
+                  <h3>Planejamento do dia</h3>
+                  <p>Revisar tarefas prioritárias e organizar execução.</p>
+                </div>
+                <span class="task-badge done">Concluído</span>
+              </div>
+
+              <div class="task-item">
+                <div>
+                  <h3>Atualização de equipe</h3>
+                  <p>Sincronizar entregas, progresso e próximos passos.</p>
+                </div>
+                <span class="task-badge progress">Em andamento</span>
+              </div>
+
+              <div class="task-item">
+                <div>
+                  <h3>Entrega da sprint</h3>
+                  <p>Finalizar pendências e validar qualidade do fluxo.</p>
+                </div>
+                <span class="task-badge pending">Pendente</span>
+              </div>
+            </div>
+
+            <div class="progress-card">
+              <div class="progress-top">
+                <span>Desempenho semanal</span>
+                <strong>92%</strong>
+              </div>
+              <div class="progress-track">
+                <div class="progress-fill" id="progress-fill"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="recursos" class="section container">
+      <div class="section-head reveal">
+        <p class="section-tag">Recursos</p>
+        <h2>O que este projeto demonstra</h2>
+        <p>
+          Esta landing page foi pensada para mostrar não só visual agradável, mas
+          também estrutura, responsividade, interatividade e preocupação com
+          experiência do usuário.
+        </p>
+      </div>
+
+      <div class="grid features-grid">
+        <article class="feature-card reveal">
+          <div class="icon-wrap">📱</div>
+          <h3>Responsividade</h3>
+          <p>Layout adaptado para celular, tablet e desktop, mantendo boa leitura e navegação.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="icon-wrap">🎨</div>
+          <h3>Design moderno</h3>
+          <p>Interface limpa, elegante e organizada, com foco em hierarquia visual e clareza.</p>
+        </article>
+
+        <article class="feature-card reveal">
+          <div class="icon-wrap">⚡</div>
+          <h3>Interatividade</h3>
+          <p>Elementos dinâmicos em JavaScript para enriquecer a experiência e dar vida à página.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="sobre" class="section section-soft">
+      <div class="container about-box">
+        <div class="about-copy reveal">
+          <p class="section-tag">Sobre o projeto</p>
+          <h2>Uma aplicação de front-end feita para portfólio</h2>
+          <p>
+            Este projeto foi desenvolvido como exemplo de aplicação front-end para
+            portfólio, demonstrando estrutura semântica, estilização moderna com CSS
+            e manipulação básica com JavaScript.
+          </p>
+          <p>
+            A proposta é apresentar uma solução simples, bonita e funcional,
+            transmitindo organização, clareza visual e uma base sólida para futuras
+            evoluções.
+          </p>
+        </div>
+
+        <div class="about-card reveal">
+          <h3>Por que este projeto é relevante?</h3>
+          <ul class="info-list">
+            <li>Mostra domínio inicial de HTML, CSS e JavaScript.</li>
+            <li>Apresenta organização de layout e seções bem definidas.</li>
+            <li>Funciona como vitrine visual para um portfólio profissional.</li>
+            <li>Permite expansão futura com backend, autenticação ou integração real.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="destaques" class="section container">
+      <div class="section-head reveal">
+        <p class="section-tag">Destaques</p>
+        <h2>Aspectos que fortalecem a apresentação</h2>
+        <p>
+          Além do visual, o projeto reforça noções importantes de produto digital,
+          comunicação visual e estrutura de interface.
+        </p>
+      </div>
+
+      <div class="grid highlight-grid">
+        <article class="highlight-card reveal">
+          <span class="highlight-label">Interface</span>
+          <h3>Boa hierarquia de informação</h3>
+          <p>Os elementos principais recebem destaque visual claro, facilitando leitura e navegação.</p>
+        </article>
+
+        <article class="highlight-card reveal">
+          <span class="highlight-label">Usabilidade</span>
+          <h3>Fluxo simples e intuitivo</h3>
+          <p>A estrutura da página conduz o usuário de forma natural entre proposta, recursos e contato.</p>
+        </article>
+
+        <article class="highlight-card reveal">
+          <span class="highlight-label">Código</span>
+          <h3>Base limpa para evolução</h3>
+          <p>O projeto foi organizado para permitir melhorias futuras sem perder clareza e manutenção.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="depoimentos" class="section section-soft">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="section-tag">Prova social</p>
+          <h2>Depoimentos simulados do produto</h2>
+          <p>
+            Esta seção reforça a estrutura de uma landing page real, adicionando credibilidade visual
+            e demonstrando como a interface pode ser preparada para conversão.
+          </p>
+        </div>
+
+        <div class="grid testimonials-grid">
+          <article class="testimonial-card reveal">
+            <p>
+              “A interface é clara, bonita e transmite organização logo no primeiro contato. Passa sensação
+              de produto real.”
+            </p>
+            <div class="testimonial-author">
+              <strong>Ana Souza</strong>
+              <span>Usuária simulada</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p>
+              “Gostei da forma como os blocos visuais foram organizados. O projeto mostra boa noção de front-end
+              e experiência do usuário.”
+            </p>
+            <div class="testimonial-author">
+              <strong>Lucas Pereira</strong>
+              <span>Avaliador fictício</span>
+            </div>
+          </article>
+
+          <article class="testimonial-card reveal">
+            <p>
+              “A landing page ficou moderna, responsiva e com uma apresentação muito mais profissional do que o básico.”
+            </p>
+            <div class="testimonial-author">
+              <strong>Marina Costa</strong>
+              <span>Feedback demonstrativo</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="section container">
+      <div class="section-head reveal">
+        <p class="section-tag">Contato</p>
+        <h2>Entre em contato</h2>
+        <p>
+          Esta área simula uma seção real de conversão, reforçando a proposta de uma landing page funcional.
+        </p>
+      </div>
+
+      <div class="contact-layout">
+        <div class="contact-card reveal">
+          <h3>Vamos conversar</h3>
+          <p>
+            Use o formulário para testar a experiência do projeto. Ele faz validação básica
+            e exibe um retorno dinâmico ao usuário.
+          </p>
+
+          <div class="contact-points">
+            <div class="contact-point">
+              <strong>Projeto front-end</strong>
+              <span>Foco em estrutura, visual e interatividade.</span>
+            </div>
+            <div class="contact-point">
+              <strong>Base expansível</strong>
+              <span>Pronto para evoluir com novas funcionalidades.</span>
+            </div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form reveal" novalidate>
+          <div class="input-group">
+            <label for="name">Seu nome</label>
+            <input type="text" id="name" placeholder="Digite seu nome" required />
+          </div>
+
+          <div class="input-group">
+            <label for="email">Seu e-mail</label>
+            <input type="email" id="email" placeholder="Digite seu e-mail" required />
+          </div>
+
+          <div class="input-group">
+            <label for="message">Mensagem</label>
+            <textarea id="message" placeholder="Digite sua mensagem" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full">Enviar mensagem</button>
+          <p id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-box">
+      <p>© 2026 TaskFlow. Projeto demonstrativo para portfólio.</p>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
